@@ -30,9 +30,7 @@ public class Shape2Triangle implements Shape
 
       int y[] = { y1 , y2 , y3 };
 
-      Polygon tri = new Polygon( x, y, 3 );
-
-      return tri;
+      return new Polygon( x, y, 3 );
 
    }
    

@@ -17,6 +17,7 @@ public class Lab14avst extends Applet
 		
 		Shape1Square square = new Shape1Square(g);
 		Shape2Triangle tri = new Shape2Triangle(g);
+		Shape3Octagon octo = new Shape3Octagon(g);
 		Shape4Circle circle = new Shape4Circle(g);
 		
 	}
