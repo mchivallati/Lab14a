@@ -12,6 +12,8 @@ public class Shape2Triangle implements Shape
    public Shape2Triangle(Graphics g)
    {
       
+      g.drawString( "Triangle" , 420 , 30 );
+      g.drawString( "A Triangle has 3 sides" , 420 , 280 );
       drawShape(g);
       
    }

@@ -18,8 +18,10 @@ public class Shape3Octagon implements Shape
 
    public void drawShape( Graphics g )
    {
-
-      g.fillPolygon( regOctagon( 150 , 375 , 50 ) );
+      
+      g.drawString( "Octagon" , 20 , 320 );
+      g.drawString( "A Octagon has 8 sides" , 20 , 580 );
+      g.fillPolygon( regOctagon( 175 , 450 , 100 ) );
       
    }
    

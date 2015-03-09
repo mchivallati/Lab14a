@@ -12,6 +12,8 @@ public class Shape1Square implements Shape
    public Shape1Square(Graphics g)
    {
       
+      g.drawString( "Square" , 20 , 30 );
+      g.drawString( "A Square has 4 sides" , 20 , 280 );
       drawShape(g);
       
    }
