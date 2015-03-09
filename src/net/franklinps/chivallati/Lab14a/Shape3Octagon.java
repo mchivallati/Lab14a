@@ -39,19 +39,12 @@ public class Shape3Octagon implements Shape
       {
 
          octoYPoints[ i ] = (int) ( spokeLength * Math.sin( Math.toRadians( theta ) ) + center.getY() );
-         System.out.println( "Value of the y component when theta is " + theta + " at index" + i + ": " + octoYPoints[i] );
-
 
          octoXPoints[ i ] = (int) ( spokeLength * Math.cos( Math.toRadians( theta ) ) + center.getX() );
-         System.out.println( "Value of the x component when theta is " + theta + " at index" + i + ": " + octoXPoints[i] );
-
 
          theta += 45;
 
       }
-
-      System.out.println("Length of octoXPoints :" + octoXPoints.length);
-      System.out.println("Length of octoYPoints :" + octoYPoints.length);
 
       return new Polygon( octoXPoints, octoYPoints , 8 );
       
