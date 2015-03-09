@@ -35,14 +35,14 @@ public class Shape3Octagon implements Shape
       octoXPoints[ 0 ] = (int) center.getX() + spokeLength;
       octoYPoints[ 0 ] = (int) center.getY();
 
-      for ( int i = 1 ; i < 7 ; i++ )
+      for ( int i = 1 ; i < 8 ; i++ )
       {
 
-         octoYPoints[ i ] = ( spokeLength * (int) Math.sin( Math.toRadians( theta ) ) + (int) center.getY() );
+         octoYPoints[ i ] = (int) ( spokeLength * Math.sin( Math.toRadians( theta ) ) + center.getY() );
          System.out.println( "Value of the y component when theta is " + theta + " at index" + i + ": " + octoYPoints[i] );
 
 
-         octoXPoints[ i ] = ( spokeLength * (int) Math.cos( Math.toRadians( theta ) ) + (int) center.getX() );
+         octoXPoints[ i ] = (int) ( spokeLength * Math.cos( Math.toRadians( theta ) ) + center.getX() );
          System.out.println( "Value of the x component when theta is " + theta + " at index" + i + ": " + octoXPoints[i] );
 
 
