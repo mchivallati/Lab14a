@@ -11,10 +11,10 @@ public class Shape2Triangle implements Shape
    
    public Shape2Triangle(Graphics g)
    {
-      
-      g.drawString( "Triangle" , 420 , 30 );
-      g.drawString( "A Triangle has 3 sides" , 420 , 280 );
+
       drawShape(g);
+      displayNumSides(g);
+      displayName(g);
       
    }
    
@@ -23,6 +23,20 @@ public class Shape2Triangle implements Shape
       
       g.fillPolygon( tri( 600 , 55 , 700 , 205 , 500 , 205 ) );
       
+   }
+
+   public void displayNumSides(Graphics g)
+   {
+
+      g.drawString( "A Triangle has 3 sides" , 420 , 280 );
+
+   }
+
+   public void displayName(Graphics g)
+   {
+
+      g.drawString( "Triangle" , 420 , 30 );
+
    }
 
    public Polygon tri( int x1, int y1, int x2, int y2, int x3, int y3 )

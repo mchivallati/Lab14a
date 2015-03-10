@@ -11,10 +11,10 @@ public class Shape4Circle implements Shape
    
    public Shape4Circle(Graphics g)
    {
-      
-      g.drawString( "Circle" , 420 , 320 );
-      g.drawString( "A Circle has 0 sides" , 420 , 580 );
+
       drawShape(g);
+      displayNumSides(g);
+      displayName(g);
       
    }
    
@@ -24,5 +24,20 @@ public class Shape4Circle implements Shape
       g.fillOval( 500 , 350 , 200 , 200 );
       
    }
-   
+
+   public void displayNumSides(Graphics g)
+   {
+
+      g.drawString( "A Circle has 0 sides" , 420 , 580 );
+
+   }
+
+   public void displayName(Graphics g)
+   {
+
+      g.drawString( "Circle" , 420 , 320 );
+
+   }
+
+
 }

@@ -13,16 +13,30 @@ public class Shape3Octagon implements Shape
    {
       
       drawShape(g);
+      displayNumSides(g);
+      displayName(g);
       
    }
 
-   public void drawShape( Graphics g )
+   public void drawShape(Graphics g)
    {
-      
-      g.drawString( "Octagon" , 20 , 320 );
-      g.drawString( "A Octagon has 8 sides" , 20 , 580 );
+
       g.fillPolygon( regOctagon( 175 , 450 , 100 ) );
       
+   }
+
+   public void displayNumSides(Graphics g)
+   {
+
+      g.drawString( "A Octagon has 8 sides" , 20 , 580 );
+
+   }
+
+   public void displayName(Graphics g)
+   {
+
+      g.drawString( "Octagon" , 20 , 320 );
+
    }
    
    private Polygon regOctagon( int centerX , int centerY , int spokeLength )
