@@ -42,16 +42,13 @@ public class Shape3Octagon implements Shape
    private Polygon regOctagon( int centerX , int centerY , int spokeLength )
    {
 
-      double theta = 45;
+      double theta = 45 / 2;
       Point center = new Point( centerX , centerY );
 
       int[] octoXPoints = new int[ 8 ];
       int[] octoYPoints = new int[ 8 ];
 
-      octoXPoints[ 0 ] = (int) center.getX() + spokeLength;
-      octoYPoints[ 0 ] = (int) center.getY();
-
-      for ( int i = 1 ; i < 8 ; i++ )
+      for ( int i = 0 ; i < 8 ; i++ )
       {
 
          octoYPoints[ i ] = (int) ( spokeLength * Math.sin( Math.toRadians( theta ) ) + center.getY() );
