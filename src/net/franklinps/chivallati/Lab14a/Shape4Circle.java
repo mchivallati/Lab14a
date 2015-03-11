@@ -12,9 +12,9 @@ public class Shape4Circle implements Shape
    public Shape4Circle(Graphics g)
    {
 
-      drawShape(g);
+      /*drawShape(g);
       displayNumSides(g);
-      displayName(g);
+      displayName(g);*/
       
    }
    

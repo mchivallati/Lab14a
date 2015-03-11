@@ -12,9 +12,9 @@ public class Shape2Triangle implements Shape
    public Shape2Triangle(Graphics g)
    {
 
-      drawShape(g);
+      /*drawShape(g);
       displayNumSides(g);
-      displayName(g);
+      displayName(g);*/
       
    }
    

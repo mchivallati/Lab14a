@@ -12,9 +12,9 @@ public class Shape3Octagon implements Shape
    public Shape3Octagon(Graphics g)
    {
       
-      drawShape(g);
+      /*drawShape(g);
       displayNumSides(g);
-      displayName(g);
+      displayName(g);*/
       
    }
 

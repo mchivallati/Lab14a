@@ -12,9 +12,9 @@ public class Shape1Square implements Shape
    public Shape1Square(Graphics g)
    {
 
-      drawShape(g);
+      /*drawShape(g);
       displayNumSides(g);
-      displayName(g);
+      displayName(g);*/
       
    }
    
