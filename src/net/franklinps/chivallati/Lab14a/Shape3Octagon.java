@@ -64,3 +64,36 @@ public class Shape3Octagon implements Shape
    }
 
 }
+
+//Method to get the point for any regular polygon using the given params
+  public static void regPoly( int centerX , int centerY , int spokeLength , int numSides )
+  {
+
+  	double theta = (double)(((numSides - 2) * 180) / numSides);
+
+    int[] polyX = new int[ numSides ];
+    int[] polyY = new int[ numSides ];
+
+   	for ( int i = 0 ; i < numSides ; i++ )
+    {
+
+    	polyY[ i ] = (int) ( spokeLength * Math.sin( Math.toRadians( theta ) ) + centerY );
+
+        polyX[ i ] = (int) ( spokeLength * Math.cos( Math.toRadians( theta ) ) + centerX );
+      
+
+        theta += (double)(((numSides - 2) * 180) / numSides);
+
+    }
+    
+    for( int k = 0 ; k < polyX.length ; k++ )
+    {
+      
+      System.out.println("Point " + (k + 1));
+      System.out.println("x-coord " + (k + 1) + ": " + polyX[k]);
+      System.out.println("y-coord " + (k + 1) + ": " + polyY[k]);
+      System.out.println("---------------------------------");
+      
+    }
+    
+  }
